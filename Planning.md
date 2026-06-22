@@ -167,6 +167,29 @@ These rules make it possible to assign most Hacker News posts to exactly one lab
 
 ---
 
+---
+
+## 8. Annotated Difficult Cases from Dataset
+
+During annotation of the 200 examples, three specific posts illustrated the label boundaries and required careful application of the decision rules:
+
+### Case 1: "Did my old job only exist because of fraud?"
+**Labeled as:** analysis  
+**Why it was tricky:** The phrasing is a question, which could suggest discussion. However, the underlying intent is to explain or argue why a job role existed (analysis of a concept), not to invite opinions.  
+**Decision rule applied:** If the question is rhetorical and frames an interpretation/argument, it's analysis. If the question is genuinely open-ended ("what do people think?"), it's discussion. This post interprets a situation rather than inviting debate.
+
+### Case 2: "The brain was not designed for this much bad news"
+**Labeled as:** discussion  
+**Why it was tricky:** This post makes a strong interpretive claim ("the brain was not designed..."), which could be analysis. However, the post's intent is to spark community reflection and debate about modern information overload, not to present evidence or deep explanation.  
+**Decision rule applied:** If the post presents a specific argument backed by reasoning or evidence, it's analysis. If the post states a position primarily to invite response and debate, it's discussion. This post invites "yes/no/I think..." responses, making it discussion.
+
+### Case 3: "Ask HN: What will AI coding look like when today's CS freshmen graduate?"
+**Labeled as:** ask_community  
+**Why it was tricky:** This post could be categorized as discussion (it's seeking opinions about the future), but the "Ask HN:" prefix and explicit request for community input make it a clear ask_community case.  
+**Decision rule applied:** The "Ask HN:" marker is a definitive signal that the post is asking the community for input, opinions, or experiences — this overrides other interpretations.
+
+---
+
 ## Summary
 
-This plan ensures that label definitions are sharp, data collection is systematic, and evaluation criteria are objective and measurable. The AI tool usage is focused on validation and error analysis rather than replacing manual judgment.
+This plan ensures that label definitions are sharp, data collection is systematic, and evaluation criteria are objective and measurable. The AI tool usage is focused on validation and error analysis rather than replacing manual judgment. The dataset of 200 balanced examples is ready for fine-tuning.
