@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+.venv/
+.venv312/
+.vscode/
+takemeter-model/
+takemeter-model-local-run/

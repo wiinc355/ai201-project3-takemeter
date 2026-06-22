@@ -262,6 +262,8 @@ I did **not** use AI to pre-label the 200-example dataset. The labels in `hacker
 
 ## Demo Video
 
+**Demo link:** `https://youtu.be/l_ye3iWKuG8'
+
 The README analysis is complete. The remaining manual deliverable is to record the 3-5 minute demo showing:
 
 1. 3-5 fine-tuned predictions with label and confidence visible

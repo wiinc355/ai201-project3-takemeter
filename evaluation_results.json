@@ -1,22 +1,11 @@
 {
   "baseline_accuracy": 0.8333,
   "baseline_accuracy_partial": 0.8333,
+  "baseline_official": true,
   "baseline_coverage": 1.0,
   "baseline_parseable_count": 30,
   "baseline_api_failure_count": 0,
   "baseline_unparseable_count": 0,
-  "finetuned_accuracy": 0.8,
-  "improvement": -0.0333,
-  "test_set_size": 30,
-  "label_map": {
-    "news": 0,
-    "analysis": 1,
-    "discussion": 2,
-    "ask_community": 3
-  },
-  "model": "distilbert-base-uncased",
-  "baseline_model": "llama-3.3-70b-versatile",
-  "baseline_official": true,
   "baseline_failed_indices": [],
   "baseline_classification_report": {
     "news": {
@@ -57,140 +46,15 @@
       "support": 30.0
     }
   },
-  "baseline_confusion_matrix": [
-    [
-      8,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      6,
-      1,
-      0
-    ],
-    [
-      1,
-      2,
-      4,
-      1
-    ],
-    [
-      0,
-      0,
-      0,
-      7
-    ]
-  ],
-  "baseline_hypothesis": "The hardest boundary is discussion vs. analysis and ask_community, especially for titles phrased as questions that invite broad debate rather than direct advice.",
-  "finetuned_classification_report": {
-    "news": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 8.0
-    },
-    "analysis": {
-      "precision": 0.6363636363636364,
-      "recall": 1.0,
-      "f1-score": 0.7777777777777778,
-      "support": 7.0
-    },
-    "discussion": {
-      "precision": 1.0,
-      "recall": 0.25,
-      "f1-score": 0.4,
-      "support": 8.0
-    },
-    "ask_community": {
-      "precision": 0.7777777777777778,
-      "recall": 1.0,
-      "f1-score": 0.8750000000000001,
-      "support": 7.0
-    },
-    "accuracy": 0.8,
-    "macro avg": {
-      "precision": 0.8535353535353536,
-      "recall": 0.8125,
-      "f1-score": 0.7631944444444445,
-      "support": 30.0
-    },
-    "weighted avg": {
-      "precision": 0.8597643097643098,
-      "recall": 0.8,
-      "f1-score": 0.7606481481481482,
-      "support": 30.0
-    }
+  "finetuned_accuracy": 0.5667,
+  "improvement": -0.2666,
+  "test_set_size": 30,
+  "label_map": {
+    "news": 0,
+    "analysis": 1,
+    "discussion": 2,
+    "ask_community": 3
   },
-  "finetuned_confusion_matrix": [
-    [
-      8,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      7,
-      0,
-      0
-    ],
-    [
-      0,
-      4,
-      2,
-      2
-    ],
-    [
-      0,
-      0,
-      0,
-      7
-    ]
-  ],
-  "finetuned_wrong_examples": [
-    {
-      "index": 14,
-      "text": "Are newsletters replacing technical blogs?",
-      "true_label": "discussion",
-      "predicted_label": "ask_community",
-      "predicted_confidence": 0.2724
-    },
-    {
-      "index": 16,
-      "text": "PostGIS pull requests are just a bunch of AI bots",
-      "true_label": "discussion",
-      "predicted_label": "analysis",
-      "predicted_confidence": 0.2695
-    },
-    {
-      "index": 19,
-      "text": "Is there still value in learning assembly language?",
-      "true_label": "discussion",
-      "predicted_label": "ask_community",
-      "predicted_confidence": 0.2718
-    },
-    {
-      "index": 26,
-      "text": "My Opinion on RL",
-      "true_label": "discussion",
-      "predicted_label": "analysis",
-      "predicted_confidence": 0.2728
-    },
-    {
-      "index": 28,
-      "text": "The notebooks Marie Curie filled with her research are still dangerous to touch",
-      "true_label": "discussion",
-      "predicted_label": "analysis",
-      "predicted_confidence": 0.2697
-    },
-    {
-      "index": 29,
-      "text": "Never Too Late",
-      "true_label": "discussion",
-      "predicted_label": "analysis",
-      "predicted_confidence": 0.2677
-    }
-  ]
+  "model": "distilbert-base-uncased",
+  "baseline_model": "llama-3.3-70b-versatile"
 }

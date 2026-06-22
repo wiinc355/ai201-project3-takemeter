@@ -19,7 +19,7 @@ Definition: Posts primarily sharing a new article, announcement, release, resear
 
 Example Posts:
 - "SQLite 4.0 Released with Experimental MVCC Support"
-- "Google Announces New Open-Source AI Model"
+- "Google Announces New Open-Source AI Mo1111rudel"
 
 Uncertain Case:
 - "Why Rust Is Replacing C in Systems Programming" — Is this news because it links to a recent article, or analysis because it mainly presents an argument? **Decision rule:** If the title is reporting an event or release (e.g., "Rust adopted by CISA"), it's news. If the title is making an interpretive claim about trends ("Rust is *replacing*"), it's analysis.
